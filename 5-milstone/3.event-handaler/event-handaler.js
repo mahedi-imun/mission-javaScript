@@ -15,3 +15,5 @@ function textElement (){
         p.innerText = inputText.value;
         inputText.value =" ";
     });
+
+    
