@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="im"> Iam delete</h1>
+    <button id="delete-btn"> delete me</button>
+<br>
+<br>
+
+    <h1 id="delete"> delete hare </h1>
+    <input id="input-delete-text" type="text" placeholder="please type: delete">
+    <button id="delete-input-text" disabled>delete</button>
+    <script>
+        document.getElementById('delete-btn').addEventListener('click',function(e){
+            document.getElementById('im').style.display='none';
+        });
+        // like git hub confirm delete function 
+        document.getElementById('input-delete-text').addEventListener('keyup',function(e){
+            if(e.target.value == "delete"){
+                document.getElementById('delete-input-text').removeAttribute('disabled');
+                document.getElementById('delete-input-text').addEventListener('click',function(e){
+                    document.getElementById('delete').style.display='none';
+                    let inputValue = document.getElementById('input-delete-text');
+                    inputValue.value = " ";
+                })
+            }
+        })
+
+    </script>
+</body>
+</html>

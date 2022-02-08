@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=	, initial-scale=1.0">
+    <title>comment </title>
+
+</head>
+<body>
+    <h1>comment hare </h1>
+    <div id="comment-parent">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quis veritatis illo!</p>
+    </div>
+    <div>
+        <textarea name="" id="comment-box" cols="20" rows="3"></textarea><br>
+        <button id="comment-btn">comment</button>
+    </div>
+    <script>
+         document.getElementById('comment-btn').addEventListener('click', function(e){
+          let commentBox=  document.getElementById('comment-box');
+          let newComment = document.createElement('h1');
+
+          newComment.innerText = commentBox.value;
+          let commentParent =document.getElementById('comment-parent');
+          commentParent.appendChild(newComment);
+          commentBox.value = '';
+         })
+    </script>
+</body>
+</html>
