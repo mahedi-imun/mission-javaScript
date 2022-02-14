@@ -9,14 +9,15 @@ function getInput (isAdd,productInput){
      productInputNumber = parseInt(product.value) - 1;
      product.value = productInputNumber
    };
-
+   calculations ()
 };
 function getInputValue (productInput,productPrice,price){
     const product= document.getElementById(productInput);
     let productInputNumber = parseInt(product.value) * price;
     document.getElementById(productPrice).innerText = productInputNumber;
-    calculations ()
+   
 };
+
 function calculations (){
     let phoneTotal = document.getElementById('phone-input').value * 1219;
     let caseTotal = document.getElementById('case-input').value * 59;
@@ -24,7 +25,7 @@ function calculations (){
     let subTotal = phoneTotal + caseTotal;
     document.getElementById('sub-total').innerText = subTotal;
     // tax 
-    let tax = subTotal /10;
+    let tax = subTotal / 10 ;
     document.getElementById('tax').innerText = tax;
     // total 
     let total = subTotal + tax ;
