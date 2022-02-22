@@ -13,8 +13,8 @@ function anaToVori (ana){
         return vori;
     }
 }
-let vori = anaToVori(32);
-// console.log(vori);
+let vori = anaToVori(321);
+console.log(vori);
 
 //problem no 2: panda cost
 function pandaCost(singara,samucha,jilapi){
@@ -35,7 +35,7 @@ function pandaCost(singara,samucha,jilapi){
     }
 }
 let  totalPrice = pandaCost(1,1,1);
-console.log(totalPrice);
+// console.log(totalPrice);
 
 // problem no 3:picnic budget
 function picnicBudget(people){
@@ -65,8 +65,8 @@ function picnicBudget(people){
         return TotalPicnicCost;
     }
 }
-let TotalPicnicCost = picnicBudget(202);
-// console.log(TotalPicnicCost);
+let TotalPicnicCost = picnicBudget(101);
+console.log(TotalPicnicCost);
 
 // problem no 4: odd friend 
 function oddFriend(friends){
@@ -86,5 +86,5 @@ function oddFriend(friends){
     return myOddFriend;
     }
 }
-    let friend = oddFriend(['Md jolil mia','mofiz mia','kodom mia', 'ram','sam','judu','modhu']);
-    // console.log(friend);
+    let friend = oddFriend(['Md jolil mia','qwwe','mofiz mia','kodom mia', 'ram','sam','judu','modhu']);
+    console.log(friend);
