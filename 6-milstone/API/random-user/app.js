@@ -1,14 +1,14 @@
-const getRandomBuddy = ()=>{
+const getRandomBuddy = () => {
     fetch('https://randomuser.me/api/?results=5')
-    .then(res => res.json())
-    .then(data => displayBuddy(data) )
+        .then(res => res.json())
+        .then(data => displayBuddy(data))
 
 }
 getRandomBuddy()
-const displayBuddy =(buddy) =>{
+const displayBuddy = (buddy) => {
     const buddies = buddy.results
     const buddiesContainer = document.getElementById('buddy-container');
-    for(const myBuddy of buddies){
+    for (const myBuddy of buddies) {
         console.log(myBuddy)
         const p = document.createElement('p');
         p.innerText = `
